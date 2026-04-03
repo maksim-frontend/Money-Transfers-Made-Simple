@@ -10,6 +10,7 @@
 :root {
     --bg_1: #394508;
     --bg_2: #ffffff;
+    --bg_3: #EDEDED;
 
     --accent_1: #D2FD9C;
     --accent_2: #77912A;
@@ -17,8 +18,8 @@
 
     --paragraph_1: #000000;
     --paragraph_2: #5D5D5D;
-
     --subhead: #CBCBCB;
+    --heading: #394508;
 }
 
 body {
@@ -203,6 +204,12 @@ body {
     text-decoration: underline;
 }
 
+#main {
+    
+    display: flex;
+    flex-direction: column;
+}
+
 .main {
     position: relative;
     display: flex;
@@ -269,7 +276,7 @@ body {
 
     padding: 31px 40px;
 
-    background-color: var(--bg_2);
+    background-color: var(--bg_3);
     color: var(--paragraph_1);
 }
 
@@ -338,7 +345,163 @@ body {
     text-decoration: none;
 }
 
+.get-more-section {
+    width: 60%;
+    margin-left: auto;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+    padding: 80px 40px;
+
+    background-color: var(--bg_2);
+}
+
+.get-more-section .text {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.get-more-section h2 {
+    font-size: 42px;
+    font-weight: 400;
+   
+    line-height: 105.8%;
+    letter-spacing: -2%;
+
+    color: var(--heading);
+}
+
+.get-more-section h3 {
+    font-size: 12px;
+    font-weight: 500;
+   
+    line-height: 115%;
+    letter-spacing: 0;
+
+    color: var(--paragraph_2);
+}
+
+.get-more-section .stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    width: 100%;
+}
+
+.get-more-section [class^="card-"] {
+    background-color: var(--accent_1);
+    color: var(--heading);
+    border-radius: 10.67px;
+    padding: 30px 20.27px;
+}
+
+.card-one, .card-two, .card-three, .card-four {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-four {
+    justify-content: flex-end;
+}
+
+.card-one .one {
+    font-size: 90px;
+    font-weight: 400;
+   
+    line-height: 103.7%;
+    letter-spacing: -4%;
+
+    color: var(--heading);
+}
+
+.card-one .two {
+    font-size: 16px;
+    font-weight: 400;
+   
+    line-height: 109%;
+    letter-spacing: 0;
+
+    color: var(--heading);
+}
+
+.reliable-app-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    width: 60%;
+    margin-left: auto;
+    position: relative;
+    padding: 80px 40px;
+
+    background-color: var(--bg_2);
+}
+
+.reliable-app-section h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+   
+    line-height: 105.8%;
+    letter-spacing: -2%;
+    text-align: center;
+
+    color: var(--heading);
+}
+
+.reliable-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h3{
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+   
+    line-height: 115%;
+    letter-spacing: 0%;
+
+    margin-top: 19px;
+
+    color: var(--heading);
+}
+
+.card p{
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+   
+    line-height: 115%;
+    letter-spacing: 0%;
+
+    color: var(--paragraph_2);
+}
+
+
+
 @media (max-width: 1279px) and (min-width: 800px) {
+
+    * {
+        padding-bottom: 0;
+    }
+
+
     #sidebar {
         position: sticky;
         top: 0;
@@ -358,9 +521,33 @@ body {
         order: -1;
         margin-left: 0;
     }
+
+    .get-more-section {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .reliable-app-section {
+        width: 100%;
+        margin-left: 0;
+    }
+
 }
 
 @media (max-width: 799px) {
+
+    * {
+        padding-bottom: 0;
+    }
+
+    .reliable-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .get-more-section .stats {
+        grid-template-columns: 1fr;
+    }
+
     #sidebar {
         position: relative;
         gap: 40px;
@@ -379,4 +566,15 @@ body {
         order: -1;
         margin-left: 0;
     }
+
+    .get-more-section {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .reliable-app-section {
+        width: 100%;
+        margin-left: 0;
+    }
+
 } 
