@@ -30,7 +30,8 @@ body {
     position: fixed;
     font-family: "Manrope", sans-serif;
 
-    width: 355px;
+    width: 450px;
+    height: 750px;
     margin-left: 40px;
 
     display: flex;
@@ -577,9 +578,7 @@ body {
     color: var(--paragraph_1);
     text-align: center;
 }
-
-
-
+/* ========================================================================================== */
 
 @media (max-width: 1279px) and (min-width: 800px) {
 
@@ -589,6 +588,7 @@ body {
         gap: 50px;
         padding: 20px 40px;
         width: 100vw;
+        height: auto;
         margin-left: 0;
     }
 
@@ -673,6 +673,12 @@ body {
     .fist-class-section .top h3 {
         font-size: 11.5px;
     }
+
+    .end {
+        width: 100%;
+        height: 60px;
+        background-color: var(--bg_1);
+    }
 }
 
 @media (max-width: 799px) {
@@ -682,6 +688,7 @@ body {
         gap: 40px;
         padding: 20px 20px 30px 20px;
         width: 100vw;
+        height: auto;
         margin-left: 0;
     }
 
@@ -792,5 +799,11 @@ body {
         object-fit: cover;
         object-position: top;
         border-radius: 10px;
+    }
+
+    .end {
+        width: 100%;
+        height: 60px;
+        background-color: var(--bg_1);
     }
 } 
