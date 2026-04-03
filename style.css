@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 * {
     margin: 0;
@@ -258,6 +258,25 @@ body {
     flex-wrap: wrap;
     gap: 48px;
     width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 31px 40px;
+
+    background-color: var(--bg_2);
+    color: var(--paragraph_1);
+}
+
+.footer .left {
+
+}
+
+.footer .rigth {
+    
 }
 
 
